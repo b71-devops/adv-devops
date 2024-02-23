@@ -7,7 +7,7 @@ terraform {
   }
 }
 
-# create resources in North Viginia
+# create resources in North Virginia
 provider "aws" {
   # Configuration options
   region = "us-east-1"
