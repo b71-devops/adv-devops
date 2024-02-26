@@ -12,3 +12,11 @@ provider "aws" {
   # Configuration options
   region = "us-east-1"
 }
+
+terraform {
+  backend "s3" {
+    bucket = "b80-terraform-bucket"
+    key    = "tf-current-state-file"
+    region = "us-east-1"
+  }
+}
