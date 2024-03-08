@@ -4,11 +4,13 @@ pipeline {
             label 'maven'
         }
     }
-
+environment {
+    PATH = "/opt/apache-maven-3.9.6/bin:$PATH"
+}
     stages {
-        stage('cloning-coebase') {
+        stage("build") {
             steps {
-                git branch: 'main', url: 'https://github.com/b71-devops/adv-devops.git'
+                sh 'mvn clean deploy'
             }
         }
     }
