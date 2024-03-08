@@ -34,8 +34,8 @@
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
+          <source>1.8</source>
+          <target>1.8</target>
         </configuration>
       </plugin>
 
@@ -46,43 +46,7 @@
         </configuration>
       </plugin>
 
-      <plugin>
-        <artifactId>maven-site-plugin</artifactId>
-        <configuration>
-          <reportPlugins>
-            <plugin>
-              <artifactId>maven-checkstyle-plugin</artifactId>
-            </plugin>
-
-            <plugin>
-              <artifactId>maven-jxr-plugin</artifactId>
-            </plugin>
-
-            <plugin>
-              <artifactId>maven-javadoc-plugin</artifactId>
-            </plugin>
-
-            <plugin>
-              <artifactId>maven-pmd-plugin</artifactId>
-            </plugin>
-
-            <plugin>
-              <artifactId>maven-surefire-report-plugin</artifactId>
-            </plugin>
-
-            <plugin>
-              <groupId>org.codehaus.mojo</groupId>
-              <artifactId>findbugs-maven-plugin</artifactId>
-            </plugin>
-
-            <plugin>
-              <groupId>org.codehaus.mojo</groupId>
-              <artifactId>taglist-maven-plugin</artifactId>
-            </plugin>
-          </reportPlugins>
-        </configuration>
-      </plugin>
-    </plugins>
+        </plugins>
 
     <pluginManagement>
       <plugins>
@@ -116,20 +80,7 @@
           <version>2.4</version>
         </plugin>
 
-        <plugin>
-          <artifactId>maven-release-plugin</artifactId>
-          <version>2.2.1</version>
-        </plugin>
-
-        <plugin>
-          <artifactId>maven-resources-plugin</artifactId>
-          <version>2.5</version>
-        </plugin>
-
-        <plugin>
-          <artifactId>maven-site-plugin</artifactId>
-          <version>3.0</version>
-        </plugin>
+      
 
         <plugin>
           <artifactId>maven-surefire-report-plugin</artifactId>
@@ -206,12 +157,6 @@
     </dependencies>
   </dependencyManagement>
 
-  <scm>
-    <connection>scm:git:git@github.com:jleetutorial/maven-project.git</connection>
-    <developerConnection>scm:git:git@github.com:jleetutorial/maven-project.git</developerConnection>
-    <tag>HEAD</tag>
-    <url>http://github.com/jleetutorial/maven-project</url>
-  </scm>
 
   <prerequisites>
     <maven>3.0.3</maven>
